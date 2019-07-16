@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML JavaScript</title>
+    </head>
+    
+    <body>
+        <!-- ---------------- Title -->
+        <h1 style="color: blue;">HTML JavaScript</h1>
+        <p>JavaScript makes HTML pages more dynamic and interactive.</p>
+
+        <br> <br>
+
+        <!-- ---------------- Example 1 -->
+        <h1>My First JavaScript</h1>
+        <button type="button" onclick="document.getElementById('demo1').innerHTML = Date()">
+            Click me to display Date and Time.
+        </button>
+        <p id="demo1"></p>
+        <hr style="border: 1px solid blue;" >
+
+        <!-- ---------------- Example 2 -->
+        <h2>Use JavaScript to Change Text</h2>
+        <p>JavaScript can change the content of an HTML element:</p>
+        <button type="button" onclick="changeText()">Click Me!</button>
+        <p id="demo2">This is a demonstration.</p>
+        <script>
+            function changeText() { 
+              document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+            }
+        </script>
+        <hr style="border: 1px solid blue;" >
+
+        <!-- ---------------- Example 3 -->
+        <h1>My First JavaScript</h1>
+        <p id="demo3">JavaScript can change the style of an HTML element.</p>
+        <script>
+        function changeStyle() {
+          document.getElementById("demo3").style.fontSize = "30px"; 
+          document.getElementById("demo3").style.color = "blue";
+          document.getElementById("demo3").style.backgroundColor = "cyan";
+          document.getElementById("demo3").style.border="1px solid blue";        
+        }
+        </script>
+        <button type="button" onclick="changeStyle()">Click Me!</button>
+        <hr style="border: 1px solid blue;" >
+
+        <!-- ---------------- Example 4 -->
+        <script>
+            function light(sw) {
+              var pic;
+              if (sw == 0) {
+                pic = "pic_bulboff.gif"
+              } else {
+                pic = "pic_bulbon.gif"
+              }
+              document.getElementById('myImage').src = pic;
+            }
+        </script>
+        <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+        <p>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+    </body>
+</html> 

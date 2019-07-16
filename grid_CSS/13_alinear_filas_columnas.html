@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alineando filas y columnas</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      grid-gap: 5px;
+      height: 100vh;
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(4, 100px);
+
+      /*Alineacin Horizontal:
+        justify-content: start | end | center | stretch | space-around | space-between | space-evenly
+
+        Alineacion Vertical: 
+        align-content: 
+      */
+
+      /* HORIZONTAL */
+      /* justify-content: start; */
+      /* justify-content: center; */
+      /* justify-content: end; */
+      /* justify-content: space-around; */
+      /* justify-content: space-evenly; */
+      justify-content: space-between;
+
+      /* VERTICAL */
+      /* align-content: space-around; */
+      /* align-content: space-evenly; */
+      align-content: center;
+
+      /* COMBINACION */
+      justify-content: center;
+      align-content: center;
+
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+    }
+  </style>
+
+</head>
+<body>
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item">item #8</div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
+  </section>
+</body>
+</html>

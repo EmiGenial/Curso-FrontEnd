@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        body{
+            border: blue solid 1px;
+            height: 650px;
+        }
+        .header{
+            height: 70px;
+            border: blue solid 1px;
+            margin: 4px;
+        }
+        .footer{
+            height: 40px;
+            border: blue solid 1px;
+            margin: 4px;
+        }
+        .flexbox{
+            /*Flex es una propiedad que afecta a los hijos directos de una clase y nada mas*/
+            display: flex; /*activa flex*/
+            flex-wrap: wrap;/*Hace que sus hijos(box) permanezcan siempre dentro del area visible del navegador
+                              Si no hay mas espacio los va mandando hacia abajo*/
+            /* flex-wrap: nowrap; */
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+        }
+        .box{
+            border: blue solid 1px;
+            /* margin: 4px; */
+            width: 80px;
+            height: 80px;
+
+            flex-shrink: 0; /*Significa que nunca se cambia de tamaño 0% modificable*/
+                            /*Si le agregamos valores entre 1 y 100 comienza a tener cambios los boxes cuando se modifica
+                              el tamaño de pantalla*/
+        }                   
+    </style>
+</head>
+<body>
+<header class="header">Header</header>
+<section class="flexbox">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</section>
+<footer class="footer">Footer</footer>    
+</body>
+</html>

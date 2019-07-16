@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alineando Items</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      grid-gap: 5px;
+      height: 100vh;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+
+      /*
+        Alineando el contenido:
+           Horizontal:
+           - justify-items: start | end | center | stretch
+           
+           Vertical:
+           - align-items: start | end | center | stretch 
+      */
+      /*justify-items: start; /*El ancho del elemento se ajusta al contenido y se ubica al inicio de la columna*/
+      /*justify-items: end; /*El ancho del elemento se ajusta al contenido y se ubica al final de la columna*/
+      justify-items: center; /*El ancho del elemento se ajusta al contenido y se ubica en el centro de la columna*/
+      /*justify-items: stretch; /*El elemento ocupa todo el ancho de la columna (3, 1fr)*/
+    
+      /*Ajuste vertical*/
+      align-items: center;
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+    }
+
+    /*Popiedad que afecta solamente al Item 5: lo mandamos a la esquina superior izquierda*/
+    .item:nth-of-type(5){
+        align-self: start;
+        justify-self: start;
+    }
+  </style>
+
+</head>
+<body>
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item">item #8</div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
+  </section>
+</body>
+</html>

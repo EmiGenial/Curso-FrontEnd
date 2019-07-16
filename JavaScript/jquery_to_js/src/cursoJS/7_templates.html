@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Templates</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .flex-container{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .flex-container > div {
+            background-color: #f1f1f1;
+            /* width: 230px; */
+            /* text-align: center; */
+        }
+        .flex-container > h4{
+            font-size: 10px;
+
+        }
+        .PlaylistItem-title{
+            width: 185px;
+            text-align: center;
+        }
+        .PlaylistItem-image{
+            cursor: pointer;
+        }
+        img{
+            width: 190px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p style="font-size: 30px;">Mispelis<span style="color: tomato">.com</span></p>
+        <hr style="border: 1px solid blue">
+        <p>Acción</p>
+    </header>
+    <div class="flex-container action-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="7_templates.js"></script>
+</body>
+</html>

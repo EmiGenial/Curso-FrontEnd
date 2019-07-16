@@ -1,0 +1,110 @@
+.subcontainer{
+    display: grid;
+    grid-gap: 10px;
+    grid-template: repeat(5,1fr) / repeat(5,1fr);
+    grid-template-areas: "screen screen screen screen screen"
+                         "seven eight nine del ac"
+                         "four five six product division"
+                         "one two three plus minus"
+                         "signo zero point equal equal";
+}
+
+.btn,.screen{
+    display: flex;
+    /* border:  1px solid black; */
+    border:  1px solid rgb(224, 204, 204);
+    cursor: pointer;
+}
+.btn:hover{
+    font-size: 60px;
+    background: green;
+    color: white;
+}
+.btn:active{
+    border:  2px solid black;
+    /* background: gray; */
+    font-size: 56px;
+}
+.btn{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+/* Botones */
+.screen{
+    justify-content: flex-end;
+    grid-area: screen;
+    background: rgb(158, 255, 158);
+    font-size: 70px;
+    color: grey;
+    font-family: 'Quantico', sans-serif;
+    padding-right: 5px;
+}
+.del:hover{
+    background: orangered;
+}
+.ac:hover{
+    background: orangered;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.zero{
+    grid-area: zero;
+}
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+.product{
+    grid-area: product;
+}
+.division{
+    grid-area: division;
+}
+.equal{
+    grid-area: equal;
+}
+.del{
+    grid-area: del;
+}
+.ac{
+    grid-area: ac;
+}
+.del {
+    grid-area: del;
+}
+.signo{
+    grid-area: signo;
+}
+.point{
+    grid-area: point;
+}

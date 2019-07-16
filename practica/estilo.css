@@ -1,0 +1,33 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif; /*Seleccion de tipografia*/
+    font-weight: normal; /*Grosor de fuente, se debe importar Source Sans Pro normal/bold etc. para que esto funcione*/
+}
+
+.header{
+    color: white;
+    background-color: #1B1E21;
+    padding-left: 10px;
+}
+
+header h1 strong{
+    color: red;
+}
+
+.car-details{
+    height: 200px;
+    background-color: rgba(60, 179, 113,0.3);
+    background-image: url('images/koenig.jpeg');
+    background-size: 380px 200px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.car-details p{
+    /* font-size: 18px; */
+    width: 500px;
+    padding-top: 40px;
+    padding-left: 10px;
+    text-align:justify;
+    letter-spacing: -.5px; 
+    border-color: blue;
+}

@@ -1,0 +1,276 @@
+/* PASO 1:: Fuentes personalizadas */
+body {
+  font-family: 'Source Sans Pro', sans-serif; /*Seleccion de tipografia*/
+  font-weight: normal; /*Grosor de fuente, se debe importar Source Sans Pro normal/bold etc. para que esto funcione*/
+  margin:0; /*para que elimine el margen de los bordes de todo el body*/
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* PASO 2:: Iterlineado y separacion entre lineas de texto */
+h1 {
+  font-size: 40px; /*Tamaño de fuente en h1*/
+  line-height: 1.5; /*Alto de linea 150% del texto contenido en h1*/
+  letter-spacing: -.2px; /*Espaciado entre letras, se recomienda usar valores ligeramente negativos*/
+  /*text-transform: capitalize;*/ /*Transformar a mayuscula, minuscula o capitalize*/
+  margin: 0;
+  /* margin: [top] [right] [bottom] [left] */
+
+}
+
+/*Letras de presentacion en Azul*/
+h1 strong {
+  color: #026fff;
+}
+
+h2{
+  color:  #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/*  PASO 3:: Administrar dimensiones de los elementos para luego sea mas facil distriburirlos*/
+.hero {
+  height: 300px;
+  color: white;
+  background-image: url('../images/hero.jpg'); /*Imagen de fondo*/
+  background-color: #1b2127;
+  background-size: 500px 300px; /*achicamos la imagen*/
+  background-repeat: no-repeat; /*si queda muy pequeña se va a repetir, con esto anulamos la repeticion*/
+  /*background-position-x: 100px; /*lo podemos mover 100px hacia la derecha*/
+  background-position-x: right; /*Envia la posicion del background hacia la derecha*/
+  display: flex;
+  align-items: center;
+}
+
+.portfolio{
+  background: #fafafa;
+  padding: 20px;
+  /* background: #F3F3F6; */
+}
+
+/* Agregamos bordes al area de proyectos */
+.project{
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+  /* color: blue; */
+  /* border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; */
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-course,
+.project-date,
+.proyect-url{
+  margin: 10px 0;
+}
+
+.project-description{
+  font-size: 20px;
+}
+
+.project strong{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* se ajustan las dos clases al mismo ancho para que queden mejor una al lado de otra */
+.project-details{
+  width: 500px;
+}
+
+.project-imageContainer{ /*Contiene imagen del celular Platzi Video*/
+  width: 500px;
+}
+
+/* PASO4:: Backgrounds de color e imagen */
+.header {
+  height: 70px;
+  background-color: #1b2127; /*Cambio de color al background del <header>*/
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*le quitamos el formato a la Lista*/
+ol,ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+
+.menu{
+  height: inherit;
+}
+
+.header a {
+  color: white; /*Cambiarle el color a la lista del NAV*/
+  text-decoration: none; /*Quitarle el underline de los <li>*/
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li{
+  height: inherit;
+  display: flex;
+  /* align-items: center; */
+}
+
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img{
+  vertical-align: middle;
+}
+
+.footer a{
+  color: white;
+}
+
+.event-list{
+  display: flex;
+}
+
+.event{
+  /* border: 1px solid red; */
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f4fbff;
+  overflow: hidden; /*Oculta toda la parte sobrante o que se desborda de contenedor padre 
+                      se puede usar cuando una imgen desborda a su cuadrito, se acomoda adentro automaticamente*/
+}
+
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover; /*sirve para acomodar las imagenes y se vea mas proporcionada
+                      es util cuando tenemos imagenes de diferentes tamaño. Nos reacomoda
+                      la imagen automaticamente. La desventaja es que no roba un poco de imagen
+                      cuando trata de ajustarla.*/
+}
+
+.event-detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+.event-description{
+  text-align: left;
+}
+
+.event-url{
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #026fff;
+  border-radius: 5px;
+}
+
+.event-list-title{
+  margin-left: 10px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');  /*Archivos svg, son archivos de alta resolucion*/
+}
+
+.social-link.facebook {
+  background-image: url('../images/facebook.svg');
+}
+.social-link.github {
+  background-image: url('../images/github.svg');
+}
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+}
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 { 
+  font-family: 'Source Sans Pro', sans-serif;
+}

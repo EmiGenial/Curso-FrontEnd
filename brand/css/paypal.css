@@ -1,0 +1,13 @@
+body{
+    background-color: var(--black-color);
+    text-align: center;
+    color: var(--white-color);
+    display:flex;
+    justify-content: center; /*Centrado Horizontal -- ejeX*/
+    align-items: center; /*Centrado Vertical -- ejeY*/
+    height: 100vh;/*Agrandar la altura para que se acomode todo al centro.
+                  Para que el centrado se aprecie se debe tener un espacio XY bien definido*/
+  }
+  .content_paypal a{
+    color: var(--green-color);
+  }
