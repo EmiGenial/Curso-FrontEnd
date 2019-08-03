@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>try...catch</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Ejemplo1::
+        try {
+          aaaalert("Welcome guest!");
+        }
+        catch(error) {
+            //alert("Error");
+            document.getElementById("demo").innerHTML=error.message;
+        }
+
+        //Ejemplo2::
+        try {
+           //Si en esta linea tenemos una funcion que no genera ninguna exception y retorna algo
+           // entonces no se ejecuta la linea del throw 
+           throw "Se produjo un error !"; // genera una excepción
+        }
+        catch (e) {
+           // sentencias para manejar cualquier excepción
+           console.log(e) // pasa el objeto de la excepción al manejador de errores
+        }
+    </script>
+</body>
+</html>

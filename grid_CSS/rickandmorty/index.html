@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rick and Morty Site</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .header{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 200px;
+      background-color: black;
+      /* border: 1px solid white; */
+    }
+
+    hr{
+      border: .5px solid rgb(15, 15, 15);
+    }
+    .container {
+      display: grid;
+      grid-gap: 20px;
+      /* height: 100vh; */
+      grid-template-columns: repeat(3, 350px);
+      grid-template-rows: repeat(auto, 500px);
+
+      /*Alineacin Horizontal:
+        justify-content: start | end | center | stretch | space-around | space-between | space-evenly
+
+        Alineacion Vertical: 
+        align-content: 
+      */
+
+      /* HORIZONTAL */
+      /* justify-content: start; */
+      justify-content: center;
+      /* justify-content: end; */
+      /* justify-content: space-around; */
+      /* justify-content: space-evenly; */
+      /* justify-content: space-between; */
+
+      /* VERTICAL */
+      align-content: space-around;
+      /* align-content: space-evenly; */
+      /* align-content: center; */
+
+      /* COMBINACION CENTRADA*/
+      /* justify-content: center; */
+      /* align-content: center; */
+
+    }
+    body{
+      background-color: rgb(31, 31, 36);
+    }
+
+    .card {
+      background: rgb(0, 0, 0);
+      color: white;
+      padding: 10px;
+      border: 1px solid green;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      border: 1px solid yellow;
+      box-shadow: 0 8px 16px 0 rgba(30, 248, 3, 0.2);
+    }
+
+    /* .info {
+      padding: 2px 16px;
+    } */
+    img{
+      width: 100%;
+      height: 60%;
+    }
+    b{
+      color: green;
+    }
+  </style>
+
+</head>
+<body>
+  <header class="header">
+    <img src="logo.jpg" alt="" style="width: 80%; height: 100%;">
+    <img src="letter.png" alt="" style="width: 100%;">
+    <nav>Rick and Morty</nav>
+  </header>  
+  <section class="container">  </section>
+  <footer></footer>
+  <script src="main.js"></script>
+</body>
+</html>

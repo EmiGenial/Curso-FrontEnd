@@ -16,13 +16,12 @@
     function videoItemTemplate(movie){
       return(
         `
-          <div class="PlaylistItem-image">
-            <img src="${movie.medium_cover_image}">
-            <h4 class="PlaylistItem-title"> 
-            ${movie.title}
-          </h4>
-          </div>
-        
+         <div class="PlaylistItem-image">
+           <img src="${movie.medium_cover_image}">
+           <h4 class="PlaylistItem-title"> 
+           ${movie.title}
+         </h4>
+         </div>
         `
       )
     }

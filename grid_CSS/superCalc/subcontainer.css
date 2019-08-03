@@ -26,6 +26,7 @@
     font-size: 56px;
 }
 .btn{
+    background: white;
     font-size: 50px;
     justify-content: center;
     align-items: center;
@@ -35,6 +36,7 @@
 /* Botones */
 .screen{
     justify-content: flex-end;
+    align-items: center;
     grid-area: screen;
     background: rgb(158, 255, 158);
     font-size: 70px;
