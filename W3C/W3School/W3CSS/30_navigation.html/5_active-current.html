@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+
+<h2>Active/Current Link</h2>
+<p>Add a w3-color class, or the w3-text-color class to the current link to let the user know which page he/she is on:</p>
+
+<!-- Ejemplo 1 -->
+<div id="nav" class="w3-bar w3-border w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button w3-green">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("nav");
+    var btns = header.getElementsByClassName("w3-button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("w3-green");
+      current[0].className = current[0].className.replace(" w3-green", "");
+      this.className += " w3-green";
+      });
+    }
+</script>
+
+
+<!-- Ejemplo 2 -->
+<!-- <br>
+<div id="nav" class="w3-bar w3-border w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button w3-text-teal">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("nav");
+    var btns = header.getElementsByClassName("w3-button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("w3-text-teal");
+      current[0].className = current[0].className.replace(" w3-text-teal", "");
+      this.className += " w3-text-teal";
+      });
+    }
+</script> -->
+</div>
+</body>
+</html>

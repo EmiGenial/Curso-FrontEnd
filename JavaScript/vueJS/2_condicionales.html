@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curso Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <a v-if="mostrar" :href="url" target="_blank"> a {{ pagina }}</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="text/javascript">
+    let app = new Vue({
+      el: '#app',
+      data: {
+        url: 'https://google.com',
+        pagina: 'Google',
+        mostrar: true
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Basic List</h2>
+  <p>The w3-ul class creates a basic list:</p>
+  <ul class="w3-ul">
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+
+<div class="w3-container">
+    <h2>Bordered List</h2>
+    <p>The w3-border class adds a border around the list:</p>
+    <ul class="w3-ul w3-border">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>List Header</h2>
+    <p>An example of how to add a heading element inside the list item.</p>
+  
+    <ul class="w3-ul w3-border">
+      <li><h2>Names</h2></li>
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>List as a Card</h2>
+    <p>The w3-card class makes the list look like a card:</p>
+    <ul class="w3-ul w3-card" style="width:50%">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+    <br>
+  
+    <p>More shadows:</p>
+    <ul class="w3-ul w3-card-4" style="width:50%">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Centered List</h2>
+    <p>The w3-center class centers the list items:</p>
+    <ul class="w3-ul w3-center">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Colored List</h2>
+    <p>Use any w3-color class to add a color to the list:</p>
+    <ul class="w3-ul w3-red">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Colored List Item</h2>
+    <p>Use any w3-color class to add a color to the list or list items:</p>
+    <ul class="w3-ul">
+      <li class="w3-blue">Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Hoverable List</h2>
+    <p>The w3-hoverable class adds a grey background color to all list items when you mouse over them:</p>
+    <ul class="w3-ul w3-hoverable">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Hoverable List</h2>
+    <p>If you want a specific hover color, add any of the w3-hover-classes to each li element:</p>
+    <ul class="w3-ul">
+      <li class="w3-hover-red">Jill</li>
+      <li class="w3-hover-green">Eve</li>
+      <li class="w3-hover-blue">Adam</li>
+      <li class="w3-hover-black">Bo</li>
+      <li class="w3-hover-orange">Anja</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Closable List Items</h2>
+    <p>To close/hide the list items, click on the "x":</p>
+    <ul class="w3-ul w3-card-4">
+      <li class="w3-display-container">Jill <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+      <li class="w3-display-container">Adam <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+      <li class="w3-display-container">Eve <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Padded List</h2>
+    <p>Use any of the w3-padding classes to increase or decrease the padding of each list item:</p>
+  
+    <p>Padding Small:
+    <ul class="w3-ul w3-border" style="width:50%">
+      <li class="w3-padding-small">Jill</li>
+      <li class="w3-padding-small">Eve</li>
+      <li class="w3-padding-small">Adam</li>
+    </ul>
+  
+    <p>Default:</p>
+    <ul class="w3-ul w3-border" style="width:50%">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  
+    <p>Padding Large:</p>
+    <ul class="w3-ul w3-border" style="width:50%">
+      <li class="w3-padding-large">Jill</li>
+      <li class="w3-padding-large">Eve</li>
+      <li class="w3-padding-large">Adam</li>
+    </ul> 
+  </div>
+  
+  <div class="w3-container">
+    <h2>Avatar List</h2>
+    <p>You can combine w3-ul and the w3-bar classes to create an avatar list:</p>
+    <ul class="w3-ul w3-card-4">
+      <li class="w3-bar">
+        <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+        <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+        <div class="w3-bar-item">
+          <span class="w3-large">Mike</span><br>
+          <span>Web Designer</span>
+        </div>
+      </li>
+  
+      <li class="w3-bar">
+        <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+        <img src="img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+        <div class="w3-bar-item">
+          <span class="w3-large">Jill</span><br>
+          <span>Support</span>
+        </div>
+      </li>
+  
+      <li class="w3-bar">
+        <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+        <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+        <div class="w3-bar-item">
+          <span class="w3-large">Jane</span><br>
+          <span>Accountant</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="w3-container">
+
+    <h2>W3.CSS Lists</h2>
+    <p>Lists have a 100% width by default. Use the width property to change this:</p>
+    
+    <p>Default:</p>
+    <ul class="w3-ul w3-border">
+      <li>Jill</li>
+      <li>Adam</li>
+    </ul>
+    
+    <p>30% width:</p>
+    <ul class="w3-ul w3-border" style="width:30%">
+      <li>Jill</li>
+      <li>Adam</li>
+    </ul>
+    
+    <p>50% width:</p>
+    <ul class="w3-ul w3-border" style="width:50%">
+      <li>Jill</li>
+      <li>Adam</li>
+    </ul>
+    
+    <p>80% width:</p>
+    <ul class="w3-ul w3-border" style="width:80%">
+      <li>Jill</li>
+      <li>Adam</li>
+    </ul>
+    
+</div>
+
+
+<div class="w3-container">
+    <h2>Tiny List</h2>
+    <p>The w3-tiny class creates a tiny list.</p>
+  
+    <ul class="w3-ul w3-tiny">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Small List</h2>
+    <p>The w3-small class creates a small list.</p>
+  
+    <ul class="w3-ul w3-small">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>Large List</h2>
+    <p>The w3-large class creates a large list.</p>
+  
+    <ul class="w3-ul w3-large">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>XLarge List</h2>
+    <p>The w3-xlarge class creates an extra large list.</p>
+  
+    <ul class="w3-ul w3-xlarge">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>XXLarge List</h2>
+    <p>The w3-xxlarge class creates an extra extra large list.</p>
+  
+    <ul class="w3-ul w3-xxlarge">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+  <div class="w3-container">
+    <h2>XXXLarge List</h2>
+    <p>The w3-xxxlarge class creates an XXXlarge list.</p>
+  
+    <ul class="w3-ul w3-xxxlarge">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+</div>
+
+  <div class="w3-container">
+    <h2>Jumbo List</h2>
+    <p>The w3-jumbo class creates an enormous "jumbo" list.</p>
+  
+    <ul class="w3-ul w3-jumbo">
+      <li>Jill</li>
+      <li>Eve</li>
+      <li>Adam</li>
+    </ul>
+  </div>
+
+</body>
+</html>

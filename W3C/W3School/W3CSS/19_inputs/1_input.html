@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-blue">
+  <h2>Input Form</h2>
+</div>
+<form class="w3-container">
+  <p>
+  <label>First Name</label>
+  <input class="w3-input w3-pale-red" type="text"></p>
+  <p>
+  <label>Last Name</label>
+  <input class="w3-input" type="text"></p>
+  <p>
+  <label>Email</label>
+  <input class="w3-input" type="text"></p>
+</form>
+
+<div class="w3-container w3-red">
+    <h2>Input Form</h2>
+  </div>
+  
+  <form class="w3-container">
+    <p>
+    <input class="w3-input" type="text">
+    <label>First Name</label></p>
+  
+    <p>
+    <input class="w3-input" type="text">
+    <label>Last Name</label></p>
+  
+    <p>
+    <input class="w3-input" type="text">
+    <label>Email</label></p>
+  </form>
+
+  <div class="w3-container">
+    <h2>Input Card</h2>
+    
+    <div class="w3-card-4">
+      <div class="w3-container w3-green">
+        <h2>Input Form</h2>
+      </div>
+  
+      <form class="w3-container">
+        <p>
+        <input class="w3-input" type="text">
+        <label>First Name</label></p>
+        <p>     
+        <input class="w3-input" type="text">
+        <label>Last Name</label></p>
+      </form>
+    </div>
+  </div>
+
+  <hr>
+  <form class="w3-container w3-card-4" action="/action_page.php">
+    <h2 class="w3-text-blue">Input Form</h2>
+    <p>Use any of the w3-text-color classes to color your labels.</p>
+    <p>      
+    <label class="w3-text-blue"><b>First Name</b></label>
+    <input class="w3-input w3-border" name="first" type="text"></p>
+    <p>      
+    <label class="w3-text-blue"><b>Last Name</b></label>
+    <input class="w3-input w3-border" name="last" type="text"></p>
+    <p>      
+    <button class="w3-btn w3-blue">Register</button></p>
+  </form>
+
+  <hr>
+  <form class="w3-container w3-card-4 w3-light-grey">
+    <h2>Bordered Input</h2>
+    <p>Add the w3-border class to create bordered inputs.</p>
+  
+    <p><label>First Name</label>
+    <input class="w3-input w3-border" name="first" type="text"></p>
+  
+    <p><label>Last Name</label>
+    <input class="w3-input w3-border" name="last" type="text"></p>
+  </form>
+
+  <hr>
+  <form class="w3-container w3-card-4 w3-light-grey">
+    <h2>Rounded Input</h2>
+    <p>Use any of the w3-round classes to create rounded borders.</p>
+  
+    <p>
+    <label>First Name</label>
+    <input class="w3-input w3-border w3-round" name="first" type="text"></p>
+    <p>
+    <label>Last Name</label>
+    <input class="w3-input w3-border w3-round-large" name="last" type="text"></p>
+    <p>
+    <label>Last Name</label>
+    <input class="w3-input w3-border w3-round-xxlarge" name="last" type="text"></p>
+  </form>
+
+  <hr>
+  <hr>
+  <div class="w3-container">
+    <h2>Borderless Input</h2>
+    <p>The w3-input class has a bottom border by default. If you want a borderless input, add the w3-border-0 class.</p>
+  </div>
+  
+  <form class="w3-container w3-card-4 w3-light-grey">
+    <h3>Default:</h3>
+    <p>      
+    <label>First Name</label>
+    <input class="w3-input" type="text"></p>
+  </form>
+  <br>
+  
+  <form class="w3-container w3-card-4 w3-light-grey">
+    <h3>Bordered:</h3>
+    <p>      
+    <label>First Name</label>
+    <input class="w3-input w3-border" type="text"></p>
+  </form>
+  <br>
+  
+  <form class="w3-container w3-card-4 w3-light-grey">
+    <h3>Borderless:</h3>
+    <p>      
+    <label>First Name</label>
+    <input class="w3-input w3-border-0" type="text"></p>
+  </form>
+  
+  <div class="w3-card-4">
+    <div class="w3-container w3-brown">
+      <h2>Input Colors</h2>
+    </div>
+    <form class="w3-container" action="/action_page.php">
+      <p>      
+      <label class="w3-text-brown"><b>First Name</b></label>
+      <input class="w3-input w3-border w3-sand" name="first" type="text"></p>
+      <p>      
+      <label class="w3-text-brown"><b>Last Name</b></label>
+      <input class="w3-input w3-border w3-sand" name="last" type="text"></p>
+      <p>
+      <button class="w3-btn w3-brown">Register</button></p>
+    </form>
+  </div>
+
+  <hr><hr>
+  <form class="w3-container">
+    <h2>Hoverable Inputs</h2>
+    <p>Move the mouse over the input fields:</p>
+  
+    <p><input class="w3-input w3-hover-green" type="text"></p>
+    <p><input class="w3-input w3-border w3-hover-red" type="text"></p>
+    <p><input class="w3-input w3-border w3-hover-blue" type="text"></p>
+  </form>
+
+
+  <form class="w3-container">
+    <h2>Animated Inputs</h2>
+    <p>The w3-animate-input class animates the width of an input to 100%. Click on the inputs below to see the effect:</p>
+    <input class="w3-input w3-animate-input" type="text" style="width:135px" placeholder="Click on me!"><br>
+    <input class="w3-input w3-border w3-animate-input" type="text" style="width:30%" placeholder="Click on me!">
+  </form>
+
+  <hr>
+  <form class="w3-container w3-card-4">
+    <h2>Checkboxes</h2>
+    <p>
+    <input class="w3-check" type="checkbox" checked="checked">
+    <label>Milk</label></p>
+    <p>
+    <input class="w3-check" type="checkbox">
+    <label> Sugar</label></p>
+    <p>
+    <input class="w3-check" type="checkbox" disabled>
+    <label>Lemon (Disabled)</label></p>
+  </form>
+
+  <form class="w3-container w3-card-4">
+    <h2>Radio Buttons</h2>
+    <p>
+    <input class="w3-radio" type="radio" name="gender" value="male" checked>
+    <label>Male</label></p>
+    <p>
+    <input class="w3-radio" type="radio" name="gender" value="female">
+    <label>Female</label></p>
+    <p>
+    <input class="w3-radio" type="radio" name="gender" value="" disabled>
+    <label>Don't know (Disabled)</label></p>
+  </form>
+
+  <br><br>
+  <form class="w3-container w3-card-4" action="/action_page.php">
+    <h1>Select Your Free Option</h1>
+  
+    <select class="w3-select" name="option">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  
+    <p><button class="w3-btn w3-teal">Register</button></p>
+  </form>
+<br> <br>
+<form class="w3-container w3-card-4" action="/action_page.php">
+    <h1>Select Your Free Option</h1>
+  
+    <select class="w3-select w3-border" name="option">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <p><button class="w3-btn w3-teal">Register</button></p>
+  </form>
+
+  <hr>
+  <div class="w3-container">
+    <h2>Form Elements in a Grid</h2>
+    <p>In this example, we use W3.CSS' Responsive Grid System to make the inputs appear on the same line (on smaller screens, they will stack horizontally with 100% width). You will learn more about this later.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <input class="w3-input w3-border" type="text" placeholder="One">
+    </div>
+    <div class="w3-third">
+      <input class="w3-input w3-border" type="text" placeholder="Two">
+    </div>
+    <div class="w3-third">
+      <input class="w3-input w3-border" type="text" placeholder="Three">
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <h2>Form Elements in a Grid</h2>
+    <p>Two column layout with labels:</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <label>First Name</label>
+      <input class="w3-input w3-border" type="text" placeholder="One">
+    </div>
+    <div class="w3-half">
+      <label>Last Name</label>
+      <input class="w3-input w3-border" type="text" placeholder="Two">
+    </div>
+  </div>
+  
+  <hr>
+  <hr>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+    <h2 class="w3-center">Contact Us</h2>
+     
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+        </div>
+    </div>
+    
+    <button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Send</button>
+    
+    </form>
+
+</body>
+</html> 

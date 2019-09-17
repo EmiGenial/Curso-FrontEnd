@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Dynamic Progress Bar</h2>
+
+  <div class="w3-light-grey">
+    <div id="myBar01" class="w3-green" style="height:24px;width:0"></div>
+  </div>
+  <br>
+
+  <button class="w3-button w3-green" onclick="move01()">Click Me</button> 
+</div>
+
+<script>
+function move01() {
+  var elem = document.getElementById("myBar01");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+</script>
+
+<hr><hr>
+<div class="w3-container">
+
+  <h2>Dynamic Progress Bar with Labels</h2>
+  <p>Centered label:</p>
+  
+  <div class="w3-light-grey">
+    <div id="myBar02" class="w3-container w3-green w3-center" style="width:20%">20%</div>
+  </div>
+  <br>
+  <button class="w3-button w3-green" onclick="move02()">Click Me</button> 
+  
+  </div>
+  
+  <script>
+  function move02() {
+    var elem = document.getElementById("myBar02");   
+    var width = 20;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        elem.innerHTML = width * 1  + '%';
+      }
+    }
+  }
+  </script>
+
+<hr><hr>
+<div class="w3-container">
+
+  <h2>Dynamic Progress Bar with Labels</h2>
+  <p>Left-aligned label:</p>
+  
+  <div class="w3-light-grey">
+  <div id="myBar03" class="w3-container w3-green" style="width:20%">20%</div>
+  </div>
+  <br>
+  <button class="w3-button w3-green" onclick="move03()">Click Me</button> 
+  </div>
+  
+  <script>
+  function move03() {
+    var elem = document.getElementById("myBar03");   
+    var width = 20;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        elem.innerHTML = width * 1  + '%';
+      }
+    }
+  }
+  </script>
+
+<hr>
+<hr>
+<div class="w3-container">
+
+  <h2>Dynamic Progress Bar with Labels</h2>
+  <p>Label outside of the progress bar:</p>
+  
+  <div class="w3-light-grey">
+    <div id="myBar04" class="w3-container w3-green" style="height:24px;width:20%"></div>
+    </div>
+  
+    <p id="demo">20%</p>
+  
+    <button class="w3-button w3-green" onclick="move04()">Click Me</button> 
+  </div>
+  
+  <script>
+  function move04() {
+    var elem = document.getElementById("myBar04");   
+    var width = 20;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        document.getElementById("demo").innerHTML = width * 1  + '%';
+      }
+    }
+  }
+  </script>
+
+<hr><hr>
+<div class="w3-container">
+  <h2>Dynamic Progress Bar with Labels</h2>
+  <p>Label outside of the progress bar:</p>
+
+  <div class="w3-light-grey">
+    <div id="myBar05" class="w3-container w3-green" style="height:24px;width:0%">
+    </div>
+  </div>
+
+  <p id="myP">Added <span id="demo05">0</span> of 10 photos</p>
+
+  <button class="w3-button w3-light-grey" onclick="move05();this.disabled='true'">Upload Photos</button> 
+</div>
+
+<script>
+function move05() {
+  var elem = document.getElementById("myBar05");   
+  var width = 0;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      document.getElementById("myP").className = "w3-text-green w3-animate-opacity";
+      document.getElementById("myP").innerHTML = "Successfully uploaded 10 photos!";
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      var num = width * 1 / 10;
+      num = num.toFixed(0)
+      document.getElementById("demo05").innerHTML = num;
+    }
+  }
+}
+</script>
+</body>
+</html> 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<h1>Layout Cells</h1>
+<p>
+  The w3-cell class redefines block elements to display horizontally (like table cells):
+</p>
+
+<div class="w3-container w3-cell">
+    <form class="w3-container w3-card-4" action="/action_page.php">
+      <h2 class="w3-text-blue">Input Form</h2>
+      <p>Use any of the w3-text-color classes to color your labels.</p>
+      <p>      
+      <label class="w3-text-blue"><b>First Name</b></label>
+      <input class="w3-input w3-border" name="first" type="text"></p>
+      <p>      
+      <label class="w3-text-blue"><b>Last Name</b></label>
+      <input class="w3-input w3-border" name="last" type="text"></p>
+      <p>      
+      <button class="w3-btn w3-blue">Register</button></p>
+    </form>
+</div>
+
+<div class="w3-container w3-green w3-cell">
+  <p>Hello W3.CSS Layout.</p>
+</div>
+
+<hr>
+<h1> Layout Container </h1>
+<span>
+  The w3-cell-row is a container for cells (columns).
+  The width of the w3-cell-row container defines the total width of all the contained cells.
+  The default width is 100%:
+</span>
+<div class="w3-cell-row">
+  <div class="w3-container w3-red w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+  <div class="w3-container w3-green w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+</div>
+
+<hr>
+<span>
+    If you change the width of the cell container, it will reduce the total width of the contained cells:
+</span>
+<div class="w3-cell-row" style="width:75%">
+  <div class="w3-container w3-red w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+  <div class="w3-container w3-green w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+</div>
+
+<hr>
+<h1> Layout Cells are Self Adjusting </h1>
+<span>
+  The w3-cell class has a very nice built-in self adjusting standard. Side-by-side elements will automatically adjust to the necessary width:
+</span>
+<div class="w3-container w3-red w3-cell">
+  <p>Hello W3.CSS Layout.</p>
+</div>
+  
+<div class="w3-container w3-green w3-cell">
+  <p>Hello W3.CSS Layout. Hello W3.CSS Layout. Hello W3.CSS Layout.</p>
+</div>
+
+<hr>
+<h1>
+  Layout Cells Adjust to Equal Height
+</h1>
+<p>
+  Side-by-side w3-cell elements will also automatically self-adjust to equal height:
+</p>
+<div class="w3-container w3-red w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+  
+  <div class="w3-container w3-green w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+    <p>Hello W3.CSS Layout.</p>
+    <p>Hello W3.CSS Layout.</p>
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+
+<hr>
+<h1>
+  Easy Alignment
+</h1>
+<p>
+  The w3-cell class makes it very easy to align text.
+  There are 3 different alignment classes:
+</p>
+<ul>
+  <li>w3-cell-top (default)</li>
+  <li>w3-cell-middle</li>
+  <li>w3-cell-bottom</li>
+</ul>
+<div class="w3-container w3-red w3-cell w3-cell-top">
+  <p>Hello W3.CSS Layout.</p>
+  <p>Hello W3.CSS Layout.</p>
+  <p>Hello W3.CSS Layout.</p>
+  <p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-container w3-green w3-cell w3-cell-middle">
+  <p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-container w3-blue w3-cell w3-cell-bottom">
+  <p>Hello W3.CSS Layout.</p>
+</div>
+
+<hr>
+<div class="w3-container">
+    <h2>Layout Container</h2>
+    <p>The w3-cell-row class stretches the elements to fit the page width.</p>
+    <p>Resize the browser window to see the effect.</p>
+  </div>
+  
+  <div class="w3-cell-row">
+    <div class="w3-container w3-red w3-cell w3-cell-top">
+      <p>Hello W3.CSS Layout.</p>
+      <p>Hello W3.CSS Layout.</p>
+      <p>Hello W3.CSS Layout.</p>
+      <p>Hello W3.CSS Layout.</p>
+    </div>
+    <div class="w3-container w3-green w3-cell w3-cell-middle">
+      <p>Hello W3.CSS Layout.</p>
+    </div>
+    <div class="w3-container w3-blue w3-cell w3-cell-bottom">
+      <p>Hello W3.CSS Layout.</p>
+    </div>
+  </div>
+
+
+</body>
+</html>

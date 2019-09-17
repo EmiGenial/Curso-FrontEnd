@@ -1,0 +1,53 @@
+Download W3.CSS:
+----------------
+Download W3.CSS from this link: https://www.w3schools.com/w3css/4/w3.css
+
+W3.CSS is Free
+W3.CSS is free to use. No license is necessary.
+
+
+How To use W3.CSS:
+------------------
+To use W3.CSS, just add a link to "w3.css" in your web pages:
+    <!DOCTYPE html>
+    <html>
+    <title>My Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+Or download w3.css and run it from your own web site:
+    <link rel="stylesheet" href="w3.css">
+
+
+If you put w3.css in a subfolder, add the folder name between slashes:
+    <link rel="stylesheet" href="/foldername/w3.css">
+
+
+If you place w3.css at the root of your web, add a slash:
+    <link rel="stylesheet" href="/w3.css">
+
+
+GitHub Repositiory:
+-------------------
+GitHub repository is: https://github.com/JaniRefsnes/w3css
+
+Validating W3.CSS:
+------------------
+Validating W3.CSS might return some errors: https://jigsaw.w3.org/css-validator/validator.html.en
+You will often get some errors when you run W3C validations.
+There will always be some browser specific values outside the current W3C specification.
+
+W3.CSS is Normalized
+--------------------
+Normalizing a style sheet is done to:
+
+1-Correct browser bugs
+2-Remove browser inconsistencies
+3-Assure common browser defaults
+4-Normalize the styles of all HTML elements
+5-Add CSS improvements
+
+An extract from Normalize.css is used in W3.CSS.
+This makes W3.CSS display HTML consistently in all browsers, and in line with modern web standards.
+
