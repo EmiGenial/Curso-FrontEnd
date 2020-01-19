@@ -1,0 +1,152 @@
+/* ---------------------- Redes sociales */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 4px;
+}
+.fa-instagram {
+  background: #e63d1f;
+  color: white;
+}
+.fa:hover {
+  text-decoration: none;
+  color: white;
+}
+.social{
+  padding-left: 10px;
+}
+
+/* ---------------------- Slogan */
+.slogan{
+  font-family: 'Itim', cursive;
+  font-size: 50px;
+}
+
+/* ---------------------- Destinos */
+.imgSlide{
+  height: 100%;
+}
+.button{
+  color: rgb(177, 166, 153);
+  cursor: pointer;
+  font-size: 36px;
+}
+.button:hover{
+  color: white;
+  background-color: black;
+}
+#destino{
+  font-size: 100px;
+  font-family: 'Kalam', cursive;
+  background-color:rgba(255, 255, 255, 0.308); 
+  border-radius: 40px;
+  color: black;
+  /* animation: destinos 4s; */
+  animation-iteration-count: 5;
+  /* animation-delay: 3s; */
+  animation-duration: 3s;
+  /* animation-name: slidein; */
+}
+  
+.center{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes destinos {
+  0%   {margin-right: 80%;}
+  25%  {margin-right: 60%;}
+  50%  {margin-left: 80%;}
+  75%  { margin-left: 60%;}
+  100% {background-color:rgba(0, 0, 0, 0.075); }
+}
+
+@keyframes rightToCenter {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes leftToCenter{
+  from {
+    margin-right: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+/* ---------------------- Card de Contacto */
+.card-contacto{
+  width: 60%;
+}
+.te-ayudamos, .tu-proximo{
+  font-family: 'Thasadith', sans-serif;
+  font-size: 39px;
+  color: rgb(97, 97, 97);
+}
+.vos-elegis{
+  font-family: 'Thasadith', sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: red;
+}
+.armar{
+  text-shadow: rgb(148, 146, 146) 4px 3px;
+  /* text-shadow: -3px 0 rgb(218, 207, 207), 0 1px rgb(255, 100, 100), 3px 0 black, 0 -1px black; */
+}
+.armar, .viaje{
+  font-family: 'Baloo Paaji', cursive;
+  font-size: 60px;
+}
+.acercate{
+  font-family: 'Thasadith', sans-serif;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+/* ---------------------- Slice de Fotos */
+/* #car{
+  height: 90vh;
+  width: 150vh;
+  perspective: 400px;
+}
+.carousel .carousel-item{
+  width: 30%;
+  height: 40vh; 
+}
+.carousel .carousel-item .foto {
+  width: 100%;
+  height: 40vh; 
+} */
+
+
+
+
+

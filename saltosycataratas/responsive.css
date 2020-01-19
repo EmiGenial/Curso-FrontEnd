@@ -1,0 +1,215 @@
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 4px;
+}
+.fa:hover {
+     text-decoration: none;
+     color: white;
+ }
+ .slogan{
+   margin-top: 50px;
+   padding: 10px;
+   font-family: 'Itim', cursive;
+   font-size: 50px;
+ }
+ .navbar{
+   padding-top: 10px;
+ }
+ .social{
+   padding-top: 20px;
+ }
+ .info{
+  font-size: 14px;
+ }
+
+ /* Slide destinos */
+.dest1{
+  background: url('destinos/beach.jpg');
+}
+.dest2{
+  background: url('destinos/diversion.jpg');
+}
+.dest3{
+  background: url('destinos/cultura.jpg');
+}
+.dest4{
+  background: url('destinos/aventura.jpg');
+}
+.dest1, .dest2, .dest3, .dest4{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+#destino{
+  /* position: absolute; */
+  /* text-align: center; */
+  font-size: 100px;
+  font-family: 'Kalam', cursive;
+  /* background-color:rgba(0, 0, 0, 0.212); */
+  background-color:rgba(255, 255, 255, 0.308); 
+  border-radius: 40px;
+  color: black;
+  /* left: 25%; */
+  animation: mi_animacion 2s;
+  /* animation-delay: 3s; */
+  /* animation-duration: 3s; */
+  /* animation-name: slidein; */
+}
+
+.center{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes mi_animacion {
+  0%   { margin-right: 80%;}
+  25%  { margin-right: 60%;}
+  50%  { margin-left: 80%;}
+  75%  { margin-left: 60%;}
+  100% {background-color:rgba(0, 0, 0, 0.075); }
+}
+/* 
+@keyframes rightToCenter {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes leftToCenter{
+  from {
+    margin-right: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+} */
+
+/* Tarjeta - Contacto */
+.card-contacto{
+  width: 40%;
+}
+.te-ayudamos, .tu-proximo{
+  font-family: 'Thasadith', sans-serif;
+  font-size: 39px;
+  color: rgb(165, 164, 164);
+}
+.vos-elegis{
+  font-family: 'Thasadith', sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: red;
+}
+.armar{
+  text-shadow: rgb(148, 146, 146) 4px 3px;
+  /* text-shadow: -3px 0 rgb(218, 207, 207), 0 1px rgb(255, 100, 100), 3px 0 black, 0 -1px black; */
+}
+.armar, .viaje{
+  font-family: 'Baloo Paaji', cursive;
+  font-size: 60px;
+}
+.acercate{
+  font-family: 'Thasadith', sans-serif;
+  font-size: 18px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+/* Responsive - Media queries */
+@media screen and (max-width:768px){
+  .slogan{
+    font-size: 27px;
+    margin-bottom: 40px; 
+  }
+  .dest1, .dest2, .dest3, .dest4{
+    width: 100%;
+    height: 200px;
+  }
+  #destino{
+    font-size: 40px;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.308); 
+  }
+  .center{
+    height: 30vh;
+  }
+}
+@media screen and (max-width:320px){
+  .slogan{
+    font-size: 15px;
+  }
+  .dest1, .dest2, .dest3, .dest4{
+    width: 100%;
+    height: 200px;
+  }
+  #destino{
+    font-size: 40px;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.308); 
+  }
+  .center{
+    height: 30vh;
+  }
+  .card-contacto{
+    width: 95%;
+    height: 350px;
+  }
+  .te-ayudamos, .tu-proximo{
+    font-family: 'Thasadith', sans-serif;
+    font-size: 30px;
+    color: rgb(165, 164, 164);
+  }
+  .vos-elegis{
+    font-family: 'Thasadith', sans-serif;
+    letter-spacing: 4px;
+    font-size: 15px;
+    color: red;
+  }
+  .armar, .viaje{
+    font-family: 'Baloo Paaji', cursive;
+    font-size: 30px;
+  }
+  .armar{
+  text-shadow: rgb(148, 146, 146) 2px 1px;
+  }
+  .acercate{
+    font-family: 'Thasadith', sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+
+
+/* @media screen and (min-width:768 px){}
+@media screen and (min-width:480 px){}
+@media screen and (min-width:320 px){} */

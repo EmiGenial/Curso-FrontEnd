@@ -1,0 +1,131 @@
+.grid-container{
+    display: grid;
+    /* grid-template: 120px 57px 100px 300px 200px 600px 600px 200px 200px / 1fr 3fr 1fr; */
+    grid-template: 120px 57px 100px 300px 200px 600px 600px 200px 200px / 20% 60% 20%;
+    grid-gap: 1px;
+}
+.item {
+    padding: 10px;
+    border: .1px solid blue;
+  }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 4px;
+}
+.fa:hover {
+     text-decoration: none;
+     color: white;
+ }
+ .social{
+    padding-left: 10px;
+  }
+
+/* .item:nth-of-type(2){
+    align-self: start;
+    justify-self: center;
+} */
+
+.item:nth-of-type(5) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  align-self: start;
+  justify-self: center;
+}
+.item:nth-of-type(12) {
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
+  align-self: start;
+  justify-self: center;
+}
+.slogan{
+  /* margin-top: 50px; */
+  /* padding: 10px; */
+  font-family: 'Itim', cursive;
+  font-size: 50px;
+}
+
+.imgSlide{
+    /* width: 170px; */
+    height: 580px;
+}
+.buttn{
+    color: antiquewhite;
+    /* background-color: gray; */
+    cursor: pointer;
+    font-size: 36px;
+}
+.item:nth-of-type(11) {
+    justify-self: end;
+    align-self: center;
+}
+.item:nth-of-type(14){
+    justify-self: start;
+    align-self: center;
+}
+
+/* Tarjeta - Contacto */
+/* .item:nth-of-type(16){
+    justify-self: center;
+    align-self: center;
+} */
+.card-contacto{
+    width: 57%;
+    margin-top: 50px;
+  }
+  .te-ayudamos, .tu-proximo{
+    font-family: 'Thasadith', sans-serif;
+    font-size: 39px;
+    color: rgb(165, 164, 164);
+  }
+  .vos-elegis{
+    font-family: 'Thasadith', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: red;
+  }
+  .armar{
+    text-shadow: rgb(148, 146, 146) 4px 3px;
+    /* text-shadow: -3px 0 rgb(218, 207, 207), 0 1px rgb(255, 100, 100), 3px 0 black, 0 -1px black; */
+  }
+  .armar, .viaje{
+    font-family: 'Baloo Paaji', cursive;
+    font-size: 60px;
+  }
+  .acercate{
+    font-family: 'Thasadith', sans-serif;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 3px;
+  }
+  
+
+
+/* Monitor Samsung TV: 1366x522 */
+/* @media(max-width:1366px){
+    .grid-container{
+        display: grid;
+        grid-template: 120px 57px 100px 300px 100px 200px 600px 200px 200px / 1.1fr 3fr .7fr;
+    }
+} */
+
+/* Notebook HP 17" :1600x621*/
+/* @media(min-width:1600px){
+    .grid-container{
+        display: grid;
+        grid-template: 120px 57px 100px 300px 100px 200px 600px 200px 200px / 1fr 3fr 1fr;
+    }
+}   */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alineando Items</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      grid-gap: 5px;
+      height: 100vh;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+
+      /*
+        Alineando el contenido:
+           Horizontal:
+           - justify-items: start | end | center | stretch
+            
+           Vertical:
+           - align-items: start | end | center | stretch 
+      */
+      /*justify-items: start; /*El ancho del elemento se ajusta al contenido y se ubica al inicio de la columna*/
+      /*justify-items: end; /*El ancho del elemento se ajusta al contenido y se ubica al final de la columna*/
+      justify-items: center; /*El ancho del elemento se ajusta al contenido y se ubica en el centro de la columna*/
+      /*justify-items: stretch; /*El elemento ocupa todo el ancho de la columna (3, 1fr)*/
+    
+      /*Ajuste vertical*/
+      align-items: center;
+      border: 1px solid #ddd;
+
+    }
+    img{
+        border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+    }
+    .item {
+      /* background: lightblue; */ 
+      padding: 3px;
+      /* border: 1px solid red; */
+     }
+
+    /*Popiedad que afecta solamente al Item 5: lo mandamos a la esquina superior izquierda*/
+    /* .item:nth-of-type(5){
+        align-self: center;
+        justify-self: center;
+    }*/
+  </style>
+
+</head>
+<body>
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <!-- <div class="item"><img src="img_forest.jpg" alt="Smiley face" width="100px" height="80px"></div>  -->
+    <div class="item"><img src="paris.jpg" alt="Paris" style="width: 250px;"></div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item"><img src="img_forest.jpg" alt="" style="width: 250px;"></div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
+  </section>
+</body>
+</html>

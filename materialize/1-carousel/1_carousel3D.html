@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    .f01{
+      background-image: url('01.jpg');
+      background-size: 600px 500px;
+      /* height: 296px; */
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      background-position-x: center;
+      background-position-y: center;
+      border: 1px solid blue;
+    }
+    .f02{
+      background-image: url('02.jpg');
+
+    }
+    .f03{
+      background-image: url('03.jpg');
+
+    }
+    .carousel{ border: 1px solid blue; }
+  
+  </style>
+</head>
+<body>
+  
+    <div class="carousel">
+        <div class="carousel-item f01" style="width: 477px; height: 296px;" href="#one!"></div>
+        <div class="carousel-item carousel-active f02" style="width: 477px; height: 296px;" href="#two!"></div>
+        <a class="carousel-item f03" style="width: 477px; height: 296px;" href="#three!"></a>
+        <a class="carousel-item" href="#four!"><img src=""></a>
+        <a class="carousel-item" href="#five!"><img src=""></a>
+      </div>
+ 
+  <!--  Scripts-->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  
+  <script>
+     $(document).ready(function(){
+       $('.carousel').carousel();
+     });
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+Responsive Design
+Son todas esas tecnicas que usamos para adapatar nuestras aplicaciones web
+a la mayor cantidad de pantallas, diferentes pantallas tiene diferentes tamanos y diferentes
+desisdad de pixels.
+
+-Patrones de responsive design (Luke Wroblewski)
+
+Patrones:
+1.mostly fluid
+2.colocación de columnas
+3.layout shifter
+4.tiny tweaks
+5.off canvas
+
+Mobile first
+
+@media screen and (min-width:320 px){}
+@media screen and (min-width:480 px){}
+@media screen and (min-width:768 px){}
+@media screen and (min-width:1024 px){}
+min-width: desde
+medidas iniciales en la que van las pantallas
+
+Desktop first
+
+@media screen and (max-width:1024 px){}
+@media screen and (min-width:768 px){}
+@media screen and (min-width:480 px){}
+@media screen and (min-width:320 px){}
+max-width: hasta
+medidas maximas que las pantallas pueden alcanzar, por como dice su nombre suelen ser medidas ´para ordenadores, o pantallas grandes

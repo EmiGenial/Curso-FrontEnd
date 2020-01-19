@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        body{
+            border: blue solid 1px;
+            height: 650px;
+        }
+        .header{
+            height: 70px;
+            border: blue solid 1px;
+            margin: 4px;
+        }
+        .footer{
+            height: 40px;
+            border: blue solid 1px;
+            margin: 4px;
+        }
+        .flexbox{
+            
+            display: flex; 
+            flex-wrap: wrap;
+            
+            /*justify-content: center; /*Centrar los hijos, manda los box al centro*/
+            /*justify-content: space-between; /*Realiza una distribucion pareja de los boxes(Hijos)*/
+            /*justify-content: space-evenly; /*Realiza una distribucion de boxes pero con separaciones de igual medida*/
+            justify-content: space-around; /*Distribuye los box en distancias iguales, excepto en los extremos*/
+        }
+        .box{
+            border: blue solid 1px;
+            /* margin: 4px; */
+            width: 80px;
+            height: 80px;
+
+            flex-shrink: 0;
+        }                   
+    </style>
+</head>
+<body>
+<header class="header">Header</header>
+<section class="flexbox">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</section>
+<footer class="footer">Footer</footer>    
+</body>
+</html>

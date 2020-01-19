@@ -1,0 +1,311 @@
+/* Notebook HP 17" :1600x621*/
+@media screen and (max-width:1600px){
+  .contacto{
+    font-size: 13px;
+  }
+}
+/* Monitor Samsung TV: 1366x664 */
+@media screen and (max-width:1366px){
+  .contacto{
+    font-size: 12px;
+  }
+}
+
+@media screen and  (max-width:1024px){
+  /* .grid-container{
+    grid-template-rows: [inicio] 40px [hl1] 50px [hl2] 60px [hl3] 355px [hl4] 100px [hl5] 20px [hl6] 400px [hl7] 500px [hl8] 500px [hl9] 200px [final];
+  } */
+  /* Contacto */
+  .item:nth-of-type(1){
+    grid-column: inicio/vl2;
+    grid-row: hl1/hl3;
+  }
+  .contacto{
+    font-size: 13px;
+  }
+
+  /* Navbar */
+  .item:nth-of-type(2){
+    grid-column: inicio/vl2;
+    grid-row: inicio/hl1;
+  }
+  /* Redes Sociales */
+  .item:nth-of-type(5){
+    grid-column:vl2/final;
+    grid-row: hl2/hl3;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 4px;
+  }
+  /* Logo */
+  .item:nth-of-type(4){
+      grid-column: vl1/vl2;
+      grid-row: hl3/hl4;
+  }
+  .logo{
+    width: 500px;
+    /* height: ; */
+  }
+  /* Slogan */
+  .item:nth-of-type(6){
+    grid-column:inicio/final;
+    grid-row:hl4/hl5;
+  }
+  .slogan{
+    font-size: 36px;
+  }
+  /* Destinos */
+  .item:nth-of-type(7){
+    grid-column: vl1/vl2;
+    grid-row:hl6/hl7;
+  }
+  #destino{
+    font-size: 70px;
+  }
+  .imgSlide{
+    height: 400px;
+  }
+
+  /* Card de contacto */
+  .item:nth-of-type(10){
+    grid-column:vl1/vl2;
+    grid-row: hl7/hl8;
+    margin-top: 50px;
+  }
+  /* ---------------------- Card de Contacto */
+  .card-contacto{
+    width: 80%;
+  }
+  .te-ayudamos, .tu-proximo{
+    font-size: 29px;
+  }
+  .vos-elegis{
+    font-size: 20px;
+  }
+
+  .armar, .viaje{
+    font-size: 50px;
+  }
+  .acercate{
+    /* font-family: 'Thasadith', sans-serif; */
+    font-size: 18px;
+  }
+
+  /* #car{
+    height: 90vh;
+    width: 800px;
+    perspective: 600px;
+  }
+  .carousel .carousel-item{
+    width: 30%;
+    height: 40vh; 
+  }
+  .carousel .carousel-item .foto {
+    width: 100%;
+    height: 40vh; 
+  } */
+
+}
+
+
+@media screen and (max-width:768px), (max-width:992px){
+  /* .grid-container{
+    grid-template-rows: [inicio] 55px [hl1] 50px [hl2] 60px [hl3] 355px [hl4] 100px [hl5] 20px [hl6] 400px [hl7] 500px [hl8] 500px [hl9] 200px [final];
+  } */
+  /* Contacto */
+  .item:nth-of-type(1){
+    grid-column: inicio/final;
+    grid-row: inicio/hl2;
+  }
+  /* Navbar */
+  .item:nth-of-type(2){
+    grid-column: vl1/vl2;
+    grid-row: hl2/hl3;
+  }
+  /* Redes Sociales */
+  .item:nth-of-type(5){
+    grid-column:inicio/vl1;
+    grid-row: hl2/hl3;
+  }
+  .fa {
+    padding: 8px;
+    font-size: 20px;
+    width: 32px;
+  }
+
+  /* Dolar */
+  .item:nth-of-type(3){
+    grid-row: hl2/hl3;
+  }
+  .dolar{
+    align-items: center;
+  }
+  /* Destinos */
+  .item:nth-of-type(7){
+    grid-column: inicio/final;
+  }
+  .card-contacto{
+    width: 85%;
+  }
+  .te-ayudamos, .tu-proximo{
+    font-size: 29px;
+  }
+  .vos-elegis{
+    font-size: 20px;
+  }
+
+  .armar, .viaje{
+    font-size: 29px;
+  }
+  .acercate{
+    /* font-family: 'Thasadith', sans-serif; */
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* #car{
+    height: 90vh;
+    width: 400px;
+    perspective: 600px;
+  }
+  .carousel .carousel-item{
+    width: 40%;
+    height: 40vh; 
+  }
+  .carousel .carousel-item .foto {
+    width: 100%;
+    height: 40vh;
+  }  */
+}
+
+@media screen and (max-width:480px) , (max-width:762px){
+  /* .grid-container{ */
+    /* grid-template-rows:  */
+    /* [inicio] 9vh Contacto */
+    /* [hl1] 9vh    Contacto */
+    /* [hl2] 3%    social menu */
+    /* [hl3] 40vh  logo */
+    /* [hl4] 15vh  slogan */
+    /* [hl5] 1%  vacio */
+    /* [hl6] 40vh Destinos */
+    /* [hl7] 80vh card  */
+    /* [hl8] 500px fotos */
+    /* [hl9] 200px fiscal footer */
+    /* [final]; */
+  /* } */
+
+  .grid-container{
+    grid-template-rows: 
+    [inicio] 3% /*Contacto*/
+    [hl1] 3%    /*Contacto*/
+    [hl2] 4%    /*social menu*/
+    [hl3] 15%  /*logo*/
+    [hl4] 15vh  /*slogan*/
+    [hl5] 1%  /*vacio*/
+    [hl6] 20% /*Destinos*/
+    [hl7] 25% /*card*/ 
+    [hl8] 300px /*fotos*/
+    [hl9] 200px /*fiscal footer*/
+    [final];
+  }
+
+  /* Navbar */
+  .item:nth-of-type(2){
+    grid-column: vl2/final;
+    grid-row: hl2/hl3;
+    justify-self: start;
+    align-self: center;
+  }
+  /* Redes Sociales */
+  .item:nth-of-type(5){
+    grid-column:inicio/vl2;
+    grid-row: hl2/hl3;
+  }
+  /* Logo */
+  .item:nth-of-type(4){
+    grid-column: inicio/final;
+    /* grid-row: hl2/hl4; */
+  }
+  /* Card de contacto */
+  .item:nth-of-type(10){
+    grid-column:inicio/final;
+    grid-row: hl7/hl8;
+  }
+  /* Fiscal */
+  .item:nth-of-type(12){
+    grid-column:vl1/vl2;
+    grid-row: hl9/final;
+    /* margin-top: 50px; */
+    justify-self: center;
+    align-self: center;
+  }
+  .imgSlide{
+    height: 350px;
+  }
+  .dolar{
+    display: none;
+  }
+  .slogan{
+    font-size: 22px;
+  }
+  .card-contacto{
+    width: 90%;
+  }
+  .logo{
+    width: 300px;
+  }
+  #car{
+    height: 90vh;
+    width: 400px;
+    perspective: 600px;
+  }
+  .carousel .carousel-item{
+    width: 40%;
+    height: 40vh; 
+  }
+  .carousel .carousel-item .foto {
+    width: 100%;
+    height: 170px;
+  } 
+  
+}
+
+@media screen and (max-width:320px){
+  .grid-container{
+    grid-template-rows: 
+    [inicio] 3% /*Contacto*/
+    [hl1] 3%    /*Contacto*/
+    [hl2] 4%    /*social menu*/
+    [hl3] 15%  /*logo*/
+    [hl4] 15vh  /*slogan*/
+    [hl5] 1%  /*vacio*/
+    [hl6] 40vh /*Destinos*/
+    [hl7] 105vh /*card*/ 
+    [hl8] 300px /*fotos*/
+    [hl9] 200px /*fiscal footer*/
+    [final];
+  }
+  .imgSlide{
+    height: 180px;
+  }
+
+  #car{
+    height: 90vh;
+    width: 310px;
+    perspective: 600px;
+  }
+  .carousel .carousel-item{
+    width: 50%;
+    height: 30vh; 
+  }
+  .carousel .carousel-item .foto {
+    width: 100%;
+    height: 170px;
+  } 
+}

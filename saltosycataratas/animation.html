@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{ 
+    overflow: hidden;
+}
+p{
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    animation: floatText 5s;
+    /* animation: floatText 5s infinite alternate ease-in-out; */
+}
+
+@keyframes floatText{
+  from {
+    left: 00%;
+    /* left: 100%; */
+  }
+
+  to {
+    /* left: auto; */
+    left: 50%;
+    /* left: 50%; */
+  }
+}
+    </style>
+</head>
+<body>
+    <p>hello text</p>
+</body>
+</html>

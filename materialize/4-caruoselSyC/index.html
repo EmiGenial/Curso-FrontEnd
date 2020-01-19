@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider SyC</title>
+    <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="../js/materialize.min.js"></script>
+    <style>
+    .grid-container{
+        display: grid;
+        grid-column-gap: 3px;
+        grid-template: 500px / 60px 800px 60px;
+        justify-content: stretch;
+        align-content: stretch;
+    }
+    .item {
+      padding: 10px;
+      border: 1px solid blue;
+    }
+    .buttn{
+        color: antiquewhite;
+        /* background-color: gray; */
+        cursor: pointer;
+        font-size: 36px;
+    }
+    .back{
+        justify-self: start;
+        align-self: center;
+    }
+    .next{
+        justify-self: end;
+        align-self: center;
+    }
+    .imgSlide{
+        /* width: 170px; */
+        height: 480px;
+    }
+    </style>
+</head>
+<body>
+    <section class="grid-container">
+        <div onmouseover='stopAutorun()' onmouseout="startAutorun()" class="item buttn next" onclick="prevSlide()"> &#10094; </div>
+        <div class="item" style="height: 500px;">
+            <div class="carousel carousel-slider imgSlide">
+                <a class="carousel-item imgSlide" href="#one!"><img onmouseover='stopAutorun()' onmouseout="startAutorun()" src="../../saltosycataratas/destinos/beach.jpg" class="imgSlide"></a>
+                <a class="carousel-item imgSlide" href="#two!"><img onmouseover="stopAutorun()" onmouseout="startAutorun()" src="../../saltosycataratas/destinos/diversion.jpg" class="imgSlide"></a>
+                <a class="carousel-item imgSlide" href="#three!"><img onmouseover="stopAutorun()" onmouseout="startAutorun()" src="../../saltosycataratas/destinos/ciudades.jpg" class="imgSlide"></a>
+                <a class="carousel-item imgSlide" href="#four!"><img onmouseover="stopAutorun()" onmouseout="startAutorun()" src="../../saltosycataratas/destinos/cultura.jpg" class="imgSlide"></a>
+                <a class="carousel-item imgSlide" href="#five!"><img onmouseover="stopAutorun()" onmouseout="startAutorun()" src="../../saltosycataratas/destinos/aventura.jpg" class="imgSlide"></a>
+            </div>
+        </div>
+        <div onmouseover='stopAutorun()' onmouseout="startAutorun()" class="item buttn back" onclick="nextSlide()"> &#10095; </div>
+    </section>
+    <br>
+    <script>
+        /*Slider*/
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.carousel');
+          var instances = M.Carousel.init(elems, {
+            duration: 400,
+            indicators: true,
+            fullWidth: true,
+            onCycleTo:setTimeout(autoplay,4000)
+          });
+        });
+        /* Autoplay */
+        var stop=false;
+        var slide = document.querySelector('.carousel');
+        function autoplay() {
+            if (stop==false){
+                slide.M_Carousel.next();
+            }
+            setTimeout(autoplay,10000);
+        }
+        function stopAutorun(){
+            stop=true;
+        }
+        function startAutorun(){
+            stop=false;
+        }
+        /*buttons*/
+        function prevSlide() {
+            // var slide = document.querySelector('.carousel');
+            slide.M_Carousel.prev();
+        }
+        function nextSlide() {
+            // var slide = document.querySelector('.carousel');
+            slide.M_Carousel.next();
+        }
+    </script>
+</body>
+</html>

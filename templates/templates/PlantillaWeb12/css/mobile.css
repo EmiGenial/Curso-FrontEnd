@@ -1,0 +1,52 @@
+@media screen and (max-width: 980px) {
+
+	.container{
+		padding: 15px;
+		width:100%;
+	}
+
+	.logo {
+	  display: block;
+	  margin: 0 auto;
+	  width: 290px;
+	}
+
+	.show-mobile{display: block;}
+	.slider img {width: 100%; }
+	#wowslider-container1 {max-width: 100%!important; }
+	.slider {padding: 0 !important; }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+	article .bloc-img {
+	  display: inline-block;
+	  margin: 0 auto 1em;
+	  vertical-align: top;
+	  width: auto;
+	}
+
+	article .text-content {
+	  display: block;
+	  width: 100%;
+	}
+
+	.col-md-35, .col-md-85 {
+	  float: none;	  
+	  width: 100%;
+	  padding: 10px 0;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	
+}
+
+@media screen and (max-width: 320px) {
+
+}
+

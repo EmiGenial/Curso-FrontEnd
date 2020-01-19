@@ -1,0 +1,93 @@
+.grid-container{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: [inicio] 20% [vl1] 60% [vl2] 20% [final];
+  /* grid-template-rows: [inicio] 60px [hl1] 60px [hl2] 60px [hl3] 355px [hl4] 100px [hl5] 20px [hl6] 500px [hl7] 600px [hl8] 500px [hl9] 200px [final]; */
+  grid-template-rows: [inicio] 2% [hl1] 2% [hl2] 3% [hl3] 15% [hl4] 8% [hl5] 20px [hl6] 500px [hl7] 600px [hl8] 500px [hl9] 200px [final];
+  row-gap: 2px;
+  column-gap: 2px;
+}
+.item {
+    border: 1px solid blue;
+}
+/* Contacto */
+.item:nth-of-type(1){
+  grid-column: inicio/vl1;
+  grid-row: inicio/hl2;
+}
+/* Navbar */
+.item:nth-of-type(2){
+  grid-column: vl1/vl2;
+  grid-row: inicio/hl1;
+}
+/* Dolar */
+.item:nth-of-type(3){
+  grid-column: vl2/final;
+  grid-row: inicio/hl1;
+}
+/* Logo */
+.item:nth-of-type(4){
+  grid-column: vl1/vl2;
+  grid-row: hl2/hl4;
+}
+/* Redes Sociales */
+.item:nth-of-type(5){
+  grid-column:inicio/vl1;
+  grid-row: hl2/hl3;
+}
+/* Slogan */
+.item:nth-of-type(6){
+  grid-column:inicio/final;
+  grid-row:hl4/hl5;
+  justify-self: center;
+  align-self: center;
+}
+/* Destinos */
+.item:nth-of-type(7){
+  grid-column: vl1/vl2;
+  grid-row:hl6/hl7;
+}
+/* back Button */
+.item:nth-of-type(8){
+  grid-column: inicio/vl1;
+  grid-row: hl6/hl7;
+  margin-top: 50px;
+  align-self: center;
+  justify-self: end;
+}
+/* next Button */
+.item:nth-of-type(9){
+  grid-column: vl2/final;
+  grid-row:hl6/hl7;
+  margin-top: 50px;
+  align-self: center;
+  justify-self: start;
+}
+/* Card de contacto */
+.item:nth-of-type(10){
+  grid-column:vl1/vl2;
+  grid-row: hl7/hl8;
+  margin-top: 50px;
+}
+/* fotos */
+.item:nth-of-type(11){
+  grid-column:inicio/final;
+  grid-row: hl8/hl9;
+  align-self: center;
+  justify-self: center;
+  /* margin-top: 50px; */
+}
+/* Fiscal */
+.item:nth-of-type(12){
+  grid-column:inicio/vl1;
+  grid-row: hl9/final;
+  margin-top: 50px;
+  justify-self: center;
+  align-self: center;
+}
+/* Footer */
+.item:nth-of-type(13){
+  grid-column:vl1/final;
+  grid-row: hl9/final;
+  margin-top: 50px;
+}
